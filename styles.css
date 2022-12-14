@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* base styles */
+body {
+  background: #eee;
+  font-family: 'Roboto';
+  color: #444;
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav h1 {
+  margin: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  background: #36cca2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input, textarea {
+  display: block;
+  margin: 16px 0;
+  padding: 6px 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-family: 'Roboto';
+}
+textarea {
+  min-height:200px;
+}
+
+.post{
+    padding:16px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 5px #5e5e5e;
+}
+.post h2{
+    margin: 0;
+}
+.post p{
+    margin-top: 0;
+}
+.post a{
+    color: #36cca2;
+}
+* {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f9f9;
+  width: 80%;
+}
+
+#app-cover {
+  display: table;
+  width: 600px;
+  margin: 80px auto;
+  counter-reset: button-counter;
+}
+
+.row {
+  display: table-row;
+}
+
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.button-cover {
+  background-color: #fff;
+  box-shadow: 0 10px 20px -8px #c5d6d6;
+  border-radius: 4px;
+}
+
+.button-cover:before {
+  counter-increment: button-counter;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 110%;
+  background-color: #dfdfdf;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+#button-11 {
+  overflow: visible;
+}
+
+#button-11 .knobs {
+  perspective: 70px;
+}
+
+#button-11 .knobs:before,
+#button-11 .knobs:after,
+#button-11 .knobs span {
+  position: absolute;
+  top: 4px;
+  border-radius: 2px;
+}
+
+#button-11 .knobs:before,
+#button-11 .knobs:after {
+  width: 20px;
+  height: 10px;
+  color: #4e4e4e;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+}
+
+#button-11 .knobs:before {
+  content: "VAN";
+  left: 4px;
+}
+
+#button-11 .knobs:after {
+  content: "NINCS";
+  right: 4px;
+}
+
+#button-11 .knobs span {
+  right: -5px;
+  width: 40px;
+  height: 28px;
+  background-color: #309100;
+  transform: rotateY(0);
+  transform-origin: 0% 50%;
+  transition: 0.6s ease all;
+  z-index: 1;
+}
+
+#button-11 .checkbox:checked + .knobs span {
+  transform: rotateY(-180deg);
+  background-color: #f44336;
+}
+
+#button-11 .checkbox:checked ~ .layer {
+  background-color: #fcebeb;
+}
+
+form{
+  border: 1px solid lightgray;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  align-items: center;
+}
+
+.date{
+  text-align: end;
+  position: relative;
+  font-size: 12px;
+}
+
+button {
+  background: #68d3d3;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  background: #a7f7f7;
+}
+
+form.search {
+  margin: 20px 0;
+}
+
+.truestore{
+  background-image: linear-gradient(to right, #007a45, #23b587);
+  color:white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  box-shadow: 0px 3px 3px 1px lightsteelblue;
+}
+.truestore:hover,
+.falsestore:hover{
+  cursor: pointer;
+}
+.falsestore{
+  background-image: linear-gradient(to right, #df000b, #f95459);
+  color:white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  box-shadow: 0px 3px 3px 1px lightsteelblue;
+}

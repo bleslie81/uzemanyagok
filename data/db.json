@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "title": "MOL",
+      "img": "/img/mol.png",
+      "gas": "van",
+      "adress": "6300 Kalocsa, Bátyai út 83",
+      "benzin": "van",
+      "gasdate": "2022. 12. 14. 11:11:26",
+      "benzindate": "2022. 12. 14. 11:12:34",
+      "id": 33
+    },
+    {
+      "title": "OMV",
+      "img": "/img/omv.png",
+      "gas": "van",
+      "adress": "6300 Kalocsa, Bátyai út 83",
+      "benzin": "van",
+      "gasdate": "2022. 12. 14. 9:58:31",
+      "benzindate": "2022. 12. 14. 11:13:01",
+      "id": 34
+    },
+    {
+      "title": "SHELL",
+      "img": "/img/shell.png",
+      "gas": "nincs",
+      "adress": "6300 Kalocsa, Bátyai út 8-10",
+      "benzin": "van",
+      "gasdate": "2022. 12. 14. 11:23:25",
+      "benzindate": "2022. 12. 14. 11:13:12",
+      "id": 37
+    },
+    {
+      "title": "VOLÁN",
+      "img": "/img/volán.png",
+      "gas": "nincs",
+      "adress": "6300 Kalocsa, Bátyai út 4,",
+      "benzin": "nincs",
+      "gasdate": "2022. 12. 14. 11:25:48",
+      "benzindate": "2022. 12. 14. 11:35:07",
+      "id": 38
+    }
+  ],
+  "polls": [
+    {
+      "id": 1,
+      "question": "Do you prefer Vue or React?",
+      "answerA": "Vue",
+      "answerB": "React"
+    }
+  ]
+}
